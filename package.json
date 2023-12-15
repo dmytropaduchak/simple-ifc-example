@@ -1,0 +1,57 @@
+{
+  "name": "simple-ifc-example",
+  "description": "Utilizes the OpenBIM Components Library to effortlessly showcase IFC models in a browser environment. With intuitive features and powerful visualization tools, it provides a seamless and engaging experience for exploring intricate building information models.",
+  "homepage": "https://dmytropaduchak.github.io/simple-ifc-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "antd": "^5.12.2",
+    "openbim-components": "^1.2.0",
+    "rc-queue-anim": "^2.0.0",
+    "rc-texty": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "three": "^0.152.2",
+    "typescript": "^4.9.5",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.68",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "react-app-rewired": "^2.2.1",
+    "gh-pages": "^6.1.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

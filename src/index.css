@@ -1,0 +1,106 @@
+html, body  {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.ant-layout {
+  text-align: center;
+  color: #000;
+  height: 100vh;
+}
+
+.dark.ant-layout {
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+}
+.ant-layout-header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.ant-layout-footer,
+.ant-layout-header {
+  background: transparent;
+  padding: 0;
+}
+.ant-layout-content > .ant-row {
+  min-height: 100%;
+}
+.ant-layout-footer {
+  padding: 0;
+}
+.dark .ant-layout-footer .ant-btn-link,
+.dark .ant-layout-header .ant-btn-link {
+  color: rgba(255, 255, 255, 0.453);
+}
+.ant-layout-footer .ant-btn-link,
+.ant-layout-header .ant-btn-link {
+  color: rgba(0, 0, 0, 0.35);
+}
+.ant-layout-footer .ant-col a {
+  font-weight: 200;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ant-layout-footer .ant-col,
+.ant-layout-content .ant-col {
+  text-align: center;
+}
+.ant-notification-notice-close {
+  border-radius: 50% !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.cube {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  text-transform: uppercase;
+}
+.cube > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #5f5f5f;
+  line-height: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5f5f5f;
+  text-align: center;
+  background: #dedede;
+  opacity: 0.8;
+  transition: all 0.1s;
+  cursor: pointer;
+  user-select: none;
+}
+.cube > div:hover {
+  background: #a8a8a8;
+}
+
+.cube div[data-orientation="top"] {
+  transform: translateY(-40px) rotateX(90deg);
+}
+.cube div[data-orientation="bottom"] {
+  transform: translateY(40px) rotateX(-90deg);
+}
+.cube div[data-orientation="left"] {
+  transform: translateX(-40px) rotateY(-90deg);
+}
+.cube div[data-orientation="right"] {
+  transform: translateX(40px) rotateY(90deg);
+}
+.cube div[data-orientation="front"] {
+  transform: translateZ(40px);
+}
+.cube div[data-orientation="back"] {
+  transform: translateZ(-40px) rotateY(180deg);
+}
