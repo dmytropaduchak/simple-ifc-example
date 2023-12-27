@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/simple-ifc-example/static/css/main.c59737ef.css",
+    "main.js": "/simple-ifc-example/static/js/main.5f6e53ec.js",
+    "index.html": "/simple-ifc-example/index.html",
+    "main.c59737ef.css.map": "/simple-ifc-example/static/css/main.c59737ef.css.map",
+    "main.5f6e53ec.js.map": "/simple-ifc-example/static/js/main.5f6e53ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59737ef.css",
+    "static/js/main.5f6e53ec.js"
+  ]
+}
